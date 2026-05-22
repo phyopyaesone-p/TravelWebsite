@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>noteUI</title>
+  </head>
+
+  <body class="bg-[#f6f4f1] font-sans">
+    <div class="flex h-screen overflow-hidden">
+      <!-- Sidebar -->
+      <aside
+        class="w-72 bg-[#f1efeb] border-r border-gray-200 p-5 hidden md:flex flex-col justify-between"
+      >
+        <div>
+          <!-- Logo -->
+          <div class="flex items-center gap-3 mb-10">
+            <div
+              class="w-10 h-10 rounded-xl bg-[#d7e5d4] flex items-center justify-center text-green-700 text-xl"
+            >
+              🍃
+            </div>
+
+            <div>
+              <h1 class="text-2xl font-bold text-gray-800">QuietMind</h1>
+              <p class="text-sm text-gray-500">Beginner's Haven</p>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <button
+            class="w-full bg-[#48684c] hover:bg-[#3d5b41] text-white py-4 rounded-full font-semibold flex items-center justify-center gap-2 mb-10"
+          >
+            <span class="text-xl">+</span>
+            New Note
+          </button>
+
+          <!-- Library -->
+          <div class="mb-10">
+            <p class="text-xs tracking-widest text-gray-400 mb-4 font-semibold">
+              LIBRARY
+            </p>
+
+            <div class="space-y-2">
+              <div
+                class="bg-[#9bb29a] text-gray-800 rounded-lg px-4 py-3 flex items-center gap-3"
+              >
+                📄 <span>Notes</span>
+              </div>
+
+              <div class="px-4 py-3 flex items-center gap-3 text-gray-700">
+                📁 <span>Categories</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Favorites -->
+          <div>
+            <p class="text-xs tracking-widest text-gray-400 mb-4 font-semibold">
+              FAVORITES
+            </p>
+
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-[#5f7f62] rounded-full"></span>
+                Personal
+              </li>
+
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-[#9bb29a] rounded-full"></span>
+                Creative Work
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Menu -->
+        <div class="space-y-5 text-gray-600">
+          <div class="flex items-center gap-3">⚙️ Settings</div>
+          <div class="flex items-center gap-3">📥 Archive</div>
+          <div class="flex items-center gap-3">❓ Help</div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 overflow-y-auto p-6">
+        <!-- Topbar -->
+        <div class="flex items-center justify-between gap-4 mb-10 flex-wrap sticky top-0">
+          <!-- Search -->
+          <div class="flex-1 min-w-[250px]">
+            <div
+              class="bg-[#efedea] rounded-full px-5 py-3 flex items-center gap-3"
+            >
+              🔍
+              <input
+                type="text"
+                placeholder="Search your thoughts..."
+                class="bg-transparent outline-none w-full text-gray-600"
+              />
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="flex items-center gap-5">
+            <button class="flex items-center gap-2 font-semibold text-gray-700">
+              <span class="text-xl">+</span>
+              New Note
+            </button>
+
+            <img
+              src="user (1).png"
+              class="w-11 h-11 rounded-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Title -->
+        <div class="flex justify-between items-start flex-wrap gap-5 mb-10">
+          <div>
+            <h1 class="text-5xl font-bold text-gray-900 mb-2">
+              Good morning, Julian.
+            </h1>
+            <p class="text-gray-500 text-lg">
+              Take a breath. What's on your mind today?
+            </p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex gap-4 mt-3">
+            <button class="bg-[#efedea] px-6 py-3 rounded-full text-gray-700">
+              ☰ Recent
+            </button>
+            <button class="bg-[#efedea] px-6 py-3 rounded-full text-gray-700">
+              ⬚ Layout
+            </button>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Large Card -->
+          <div class="lg:col-span-2 bg-[#f3f1ee] rounded-3xl p-8">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="bg-gray-200 text-sm px-4 py-1 rounded-full">
+                Creative Work
+              </span>
+
+              <span class="text-sm text-gray-500"> • 2 hours ago </span>
+            </div>
+
+            <div class="flex justify-between gap-6">
+              <div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-5">
+                  The Philosophy of Quiet Productivity
+                </h2>
+
+                <p class="text-gray-500 leading-8">
+                  In a world that never stops shouting, there is a profound
+                  power in finding silence. This morning I'm reflecting on how
+                  we can build tools that don't demand attention, but rather
+                  reward it...
+                </p>
+              </div>
+
+              <div
+                class="hidden md:flex w-32 h-32 rounded-full bg-gray-200 shrink-0 items-center justify-center text-5xl"
+              >
+                💡
+              </div>
+            </div>
+
+            <div class="flex gap-3 mt-8 flex-wrap">
+              <span class="bg-white px-4 py-2 rounded-full text-sm">
+                #mindfulness
+              </span>
+
+              <span class="bg-white px-4 py-2 rounded-full text-sm">
+                #design-ethics
+              </span>
+            </div>
+          </div>
+
+          <!-- Small Card -->
+          <div class="bg-white rounded-3xl p-6">
+            <span class="bg-[#dce8d8] text-sm px-3 py-1 rounded-full">
+              Ideas
+            </span>
+
+            <h3 class="text-3xl mt-5 mb-4 font-semibold text-gray-800">
+              Morning Ritual Ideas
+            </h3>
+
+            <ol class="text-gray-500 space-y-3 leading-7">
+              <li>1. Cold water therapy</li>
+              <li>2. 5 minutes of focused breathing</li>
+              <li>3. Tea ceremony without screens...</li>
+            </ol>
+
+            <div class="mt-8">
+              <span class="bg-gray-100 px-4 py-2 rounded-full text-sm">
+                #wellness
+              </span>
+            </div>
+          </div>
+
+          <!-- Bottom Card 1 -->
+          <div class="bg-white rounded-3xl overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
+              class="h-52 w-full object-cover"
+            />
+
+            <div class="p-6">
+              <span class="bg-gray-200 text-sm px-3 py-1 rounded-full">
+                Work
+              </span>
+
+              <h3 class="text-3xl mt-5 mb-3 font-semibold">
+                Office Redesign Notes
+              </h3>
+
+              <p class="text-gray-500 leading-7">
+                Need to prioritize ergonomic comfort and natural light
+                diffusion...
+              </p>
+            </div>
+          </div>
+
+          <!-- Bottom Card 2 -->
+          <div class="bg-white rounded-3xl p-6">
+            <span class="bg-gray-200 text-sm px-3 py-1 rounded-full">
+              Personal
+            </span>
+
+            <h3 class="text-3xl mt-5 mb-4 font-semibold">
+              Weekend Grocery List
+            </h3>
+
+            <ul class="text-gray-500 space-y-3 text-lg">
+              <li>• Fresh ginger & mint</li>
+              <li>• Organic honey</li>
+            </ul>
+          </div>
+          <!-- Bottom Card 3 -->
+          <div class="bg-white rounded-3xl p-6">
+            <div class="flex justify-between items-center mb-5">
+              <span class="bg-gray-200 text-sm px-3 py-1 rounded-full">
+                Work
+              </span>
+
+              <span class="text-gray-400 text-sm"> Mar 12 </span>
+            </div>
+
+            <h3 class="text-3xl mb-4 font-semibold">Project Alpha Review</h3>
+            <p class="text-gray-500 leading-8">
+              The feedback from the initial user group was surprisingly positive
+              regarding the soft-focus UI...
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

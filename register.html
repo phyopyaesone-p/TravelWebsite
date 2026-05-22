@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <title>Create Account</title> 
+</head> 
+ 
+<body class="bg-[#dfe7f7] min-h-screen flex items-center justify-center overflow-hidden"> 
+ 
+  <div class="relative bg-white w-full max-w-md sm:max-w-lg md:max-w-xl rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 mx-4 my-8 max-h-[90vh] overflow-y-scroll" style="scrollbar-gutter: stable;"> 
+ 
+    <div class="flex justify-center mb-5"> 
+      <div class="w-20 h-20 sm:w-24 sm:h-24 bg-indigo-100 rounded-2xl flex items-center justify-center overflow-hidden"> 
+        <img src="image.png" alt="Avatar" class="w-12 h-12" /> 
+      </div> 
+    </div> 
+ 
+    <div class="text-center mb-8"> 
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900"> 
+        Create Account 
+      </h1> 
+ 
+      <p class="text-gray-500 mt-2"> 
+        Join us today! It only takes a minute. 
+      </p> 
+    </div> 
+ 
+ 
+    <form class="space-y-5"> 
+ 
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> 
+ 
+        <div> 
+          <label class="block text-sm font-semibold mb-2"> 
+            Full Name 
+          </label> 
+ 
+          <input 
+            type="text" 
+            placeholder="John Doe" 
+            class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-indigo-500" 
+          /> 
+        </div> 
+ 
+        <div> 
+          <label class="block text-sm font-semibold mb-2"> 
+            Email Address 
+          </label> 
+ 
+          <input 
+            type="email" 
+            placeholder="name@company.com" 
+            class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-indigo-500" 
+          /> 
+        </div> 
+ 
+      </div> 
+ 
+      <div> 
+        <label class="block text-sm font-semibold mb-2"> 
+          Password 
+        </label> 
+ 
+        <input 
+          type="password" 
+          placeholder="••••••••" 
+          class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-indigo-500" 
+        /> 
+      </div> 
+ 
+      <div> 
+        <label class="block text-sm font-semibold mb-2"> 
+          Confirm Password 
+        </label> 
+ 
+        <input 
+          type="password" 
+          placeholder="••••••••" 
+          class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-indigo-500" 
+        /> 
+      </div> 
+ 
+      <div class="flex items-start gap-3 text-sm text-gray-500"> 
+ 
+        <input type="checkbox" class="mt-1 accent-indigo-600"> 
+ 
+        <p> 
+          I agree to the 
+          <a href="#" class="text-indigo-600 font-medium"> 
+            Terms of Service 
+          </a> 
+          and 
+          <a href="#" class="text-indigo-600 font-medium"> 
+            Privacy Policy 
+          </a>. 
+        </p> 
+ 
+      </div> 
+ 
+      <button 
+        class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 sm:py-4 rounded-2xl font-semibold text-base sm:text-lg shadow-lg transition duration-300" 
+      > 
+        Create My Account » 
+      </button> 
+ 
+    </form> 
+ 
+    <p class="text-center text-gray-500 mt-6 text-sm"> 
+      Already have an account? 
+      <a href="#" class="text-indigo-600 font-semibold"> 
+        Sign in here 
+      </a> 
+    </p> 
+ 
+  </div> 
+ 
+</body> 
+</html>
